@@ -116,7 +116,9 @@ class Ramp extends _react.default.Component {
 
   componentWillUnmount() {
     window.ramp.que.push(() => {
-      cleanUp(this.unitToAdd.selectorId);
+      if (this.unitToAdd?.selectorId) {
+        cleanUp(this.unitToAdd.selectorId);
+      }
     });
   }
 
