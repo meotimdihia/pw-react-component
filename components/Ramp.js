@@ -69,8 +69,6 @@ class Ramp extends _react.default.Component {
       configScript.src = 'https://cdn.intergient.com/ramp_core.js';
       document.head.appendChild(configScript);
     }
-
-    this.displayTaglessUnits();
   }
 
   displayTaglessUnits() {
