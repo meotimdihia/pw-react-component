@@ -83,7 +83,7 @@ class RampUnit extends _react.default.Component {
 
   componentWillUnmount() {
     window.ramp.que.push(() => {
-      if (this.unitToAdd?.selectorId) {
+      if (this.unitToAdd && this.unitToAdd.selectorId) {
         cleanUp(this.unitToAdd.selectorId);
       }
     });
